@@ -1,0 +1,14 @@
+[project]
+name = "mailtea-python-example"
+version = "0.1.0"
+description = "Sending email with Mailtea from plain Python"
+requires-python = ">=3.9"
+# The Mailtea SDK has no dependencies of its own, so this is the whole tree.
+dependencies = ["mailtea==0.9.1"]
+
+[project.optional-dependencies]
+# Tests only. Never install pytest into the runtime environment.
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
