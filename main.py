@@ -39,8 +39,8 @@ def load_dotenv(path: Path | None = None) -> None:
 def build_client() -> Mailtea:
     """The client reads MAILTEA_API_KEY, and MAILTEA_API_BASE_URL if it is set.
 
-    Setting the base URL is only needed for local dev or a self-hosted Mailtea;
-    leave it unset in production and the SDK talks to https://api.mailtea.app.
+    The base URL is an optional override. Unset, the SDK talks to
+    https://api.mailtea.app.
     """
     return Mailtea(os.environ.get("MAILTEA_API_KEY"))
 

@@ -1,8 +1,7 @@
 """Tests for the example, run against the bundled mock Mailtea API.
 
 No API key, no network. Each test points the SDK at the mock through
-MAILTEA_API_BASE_URL, which is exactly how you point it at a local dev or
-self-hosted Mailtea.
+MAILTEA_API_BASE_URL.
 """
 
 from __future__ import annotations
